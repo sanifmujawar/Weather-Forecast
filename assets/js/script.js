@@ -168,3 +168,23 @@ renderSearchHistory = () => {
 		searchedButtons.appendChild(button);
 	}
 };
+
+// EVENT LISTENERS
+searchButton.addEventListener('click', function (event) {
+	event.preventDefault();
+
+	cityName = searchInput.value.toLowerCase().trim();
+	fetchCoordinates();
+
+	searchInput.value = '';
+});
+
+// INIT
+
+init = () => {
+	mainCardDate.textContent = `${today}`;
+	renderSearchHistory();
+	fetchCoordinates();
+};
+
+init();
