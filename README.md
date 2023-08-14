@@ -1,4 +1,4 @@
-🌦️ Weather Forecast App 🌦️
+# 🌦️ Weather Forecast App 🌦️
 
 ## Overview 🌟
 Welcome to the Weather Forecast App project! 🚀 Build a dynamic weather dashboard that provides users with up-to-date weather information for multiple cities. This app will allow users to plan their trips effectively by presenting the current and future weather conditions. Utilize the 5 Day Weather Forecast API to retrieve weather data, and leverage localStorage to store persistent data.
@@ -25,7 +25,7 @@ When a user clicks on a city in the search history, they are again presented wit
 
 ## Instructions 📝
 To use the Weather Forecast App:
-1. Open the Weather Forecast App in your web browser. 🌐
+1. Open the [Weather Forecast App](https://sanifmujawar.github.io/Weather-Forecast/) in your web browser. 🌐
 2. Enter the name of the city you want to get weather information for.
 3. Click the "Search" button.
 4. The current weather conditions and 5-day forecast for the city will be displayed.
@@ -33,7 +33,7 @@ To use the Weather Forecast App:
 
 ## Demo 📸
 Take a look at the functionality of the Weather Forecast App:
-![Weather Forecast App Demo](link-to-demo-image)
+![Weather Forecast App Demo](./assets/10-server-side-apis-challenge-demo.png)
 
 ## App Features 🔥
 - 🌟 Search for Multiple Cities: Get weather information for various cities.
@@ -55,6 +55,6 @@ The Weather Forecast App offers users an intuitive and informative experience, e
 ## Repository Quality 📚
 The GitHub repository for this project adheres to best practices in terms of file structure, naming conventions, class/id naming, indentation, and commit messages. The README provides comprehensive information about the project, including a detailed description, a demo image, and links to the deployed application and repository. 📝
 
-© 2023 Your Name Confidential and Proprietary. All Rights Reserved.
+© 2023 [SanifMujawar](https://github.com/sanifmujawar) Confidential and Proprietary. All Rights Reserved.
 
 🌦️ Note: Feel free to enhance this README by adding any additional sections or details that suit the project's requirements and complexity. 📋
