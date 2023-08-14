@@ -21,10 +21,29 @@
     </div>
   </header>
 
-<body>
+  <div class="container-fluid weather-container">
+    <div class="row">
+
+      <!-- LEFT COLUMN -->
+      <div class="col-12 col-sm-12 col-md-12 col-lg-3">
+        <div id="search-card" class="card px-4 py-4 bg-dark text-light">
+          <h2>Search for a City:</h2>
+
+          <!-- CITY SEARCH FORM -->
+          <form class="border-bottom mb-2">
+            <input type="text" class="form-control mb-2" id="city-search" placeholder="Enter a City" autocomplete="off">
+            <button class="btn btn-primary btn-block mb-2" id="city-search-btn">Search</button>
+          </form>
+
+          <!-- SEARCH HISTORY BUTTONS -->
+          <div id="search-buttons"></div>
+        </div>
+      </div>
+
+<!-- <body>
   <header class="container-fluid text-center text-white bg-dark p-2 weather-header">
     <h1>Weather Dashboard</h1>
-  </header>
+  </header> -->
 
   <!-- max-width for ultra wide resolutions -->
   <div class="container-fluid" style="max-width: 1400px">
