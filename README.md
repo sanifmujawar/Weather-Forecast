@@ -55,6 +55,6 @@ The Weather Forecast App offers users an intuitive and informative experience, e
 ## Repository Quality 📚
 The GitHub repository for this project adheres to best practices in terms of file structure, naming conventions, class/id naming, indentation, and commit messages. The README provides comprehensive information about the project, including a detailed description, a demo image, and links to the deployed application and repository. 📝
 
-© 2023 [SanifMujawar](https://github.com/sanifmujawar) Confidential and Proprietary. All Rights Reserved.
+© 2023 [Sanif Mujawar](https://github.com/sanifmujawar) Confidential and Proprietary. All Rights Reserved.
 
 🌦️ Note: Feel free to enhance this README by adding any additional sections or details that suit the project's requirements and complexity. 📋
