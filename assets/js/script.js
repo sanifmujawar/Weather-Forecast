@@ -79,3 +79,29 @@ fetchWeather = (weatherData) => {
 			renderForecast(data);
 		});
 };
+
+renderCurrentWeather = (coordinatesData, openWeatherData) => {
+	// sets card content
+	mainCardCity.textContent = coordinatesData[0].name;
+	mainCardIcon.src = `http://openweathermap.org/img/wn/${openWeatherData.current.weather[0].icon}@2x.png`;
+	mainCardTemp.textContent = `${Math.trunc(
+		openWeatherData.current.temp
+	)}\xB0F`;
+	mainCardWind.textContent = `${openWeatherData.current.wind_speed} mph`;
+	mainCardHumidity.textContent = `${openWeatherData.current.humidity}%`;
+	mainCardUv.textContent = Math.trunc(openWeatherData.current.uvi);
+
+	// clears previous classes
+	mainCardUv.parentElement.classList.remove('favorable');
+	mainCardUv.parentElement.classList.remove('moderate');
+	mainCardUv.parentElement.classList.remove('severe');
+
+	// adds class based on uv index
+	if (mainCardUv.textContent <= 2) {
+		mainCardUv.parentElement.classList.add('favorable');
+	} else if (mainCardUv.textContent <= 7) {
+		mainCardUv.parentElement.classList.add('moderate');
+	} else {
+		mainCardUv.parentElement.classList.add('severe');
+	}
+}
