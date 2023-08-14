@@ -140,3 +140,31 @@ appendToSearchHistory = (weatherData) => {
 	}
 	renderSearchHistory();
 };
+
+renderSearchHistory = () => {
+	searchedButtons.textContent = '';
+
+	if (searchHistory === undefined || searchHistory === null) {
+		localStorage.setItem('searchHistory', JSON.stringify(defaultSearch));
+	}
+
+	searchHistory = JSON.parse(localStorage.getItem('searchHistory'));
+	cityName = searchHistory[0];
+
+	// creates a button for each entry
+	for (let i = 0; i < searchHistory.length; i++) {
+		let button = document.createElement('button');
+		button.textContent = searchHistory[i];
+
+		button.classList.add('btn');
+		button.classList.add('btn-secondary');
+		button.classList.add('btn-block');
+		button.classList.add('mb-2');
+		button.classList.add('searched-cities-btn');
+		button.addEventListener('click', function (event) {
+			cityName = event.target.textContent;
+			fetchCoordinates();
+		});
+		searchedButtons.appendChild(button);
+	}
+};
