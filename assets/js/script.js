@@ -105,3 +105,24 @@ renderCurrentWeather = (coordinatesData, openWeatherData) => {
 		mainCardUv.parentElement.classList.add('severe');
 	}
 }
+
+renderForecast = (openWeatherData) => {
+	for (let i = 0; i < forecastCard.length; i++) {
+		// sets forecast card content
+		forecastCardDate[i].textContent = moment()
+			.add(i + 1, 'days')
+			.format('M/DD/YYYY');
+		forecastCardIcon[
+			i
+		].src = `http://openweathermap.org/img/wn/${openWeatherData.daily[i].weather[0].icon}@2x.png`;
+		forecastCardTemp[i].textContent = `${Math.trunc(
+			openWeatherData.daily[i].temp.day
+		)}\xB0F`;
+		forecastCardWind[
+			i
+		].textContent = `${openWeatherData.daily[i].wind_speed} mph`;
+		forecastCardHumidity[
+			i
+		].textContent = `${openWeatherData.daily[i].humidity}%`;
+	}
+};
