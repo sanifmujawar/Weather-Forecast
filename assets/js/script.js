@@ -126,3 +126,17 @@ renderForecast = (openWeatherData) => {
 		].textContent = `${openWeatherData.daily[i].humidity}%`;
 	}
 };
+
+appendToSearchHistory = (weatherData) => {
+	let city = weatherData[0].name;
+	let searchArray = JSON.parse(localStorage.getItem('searchHistory'));
+
+	// checks to see if the city is already in search history
+	if (!searchArray.includes(city)) {
+		searchArray.unshift(city);
+		searchArray.pop();
+		localStorage.setItem('searchHistory', JSON.stringify(searchArray));
+		searchHistory = JSON.parse(localStorage.getItem('searchHistory'));
+	}
+	renderSearchHistory();
+};
