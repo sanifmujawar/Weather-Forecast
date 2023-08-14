@@ -33,7 +33,7 @@ To use the Weather Forecast App:
 
 ## Demo 📸
 Take a look at the functionality of the Weather Forecast App:
-![Weather Forecast App Demo](./assets/10-server-side-apis-challenge-demo.png)
+![Weather Forecast App Demo](./assets/images/demo.gif)
 
 ## App Features 🔥
 - 🌟 Search for Multiple Cities: Get weather information for various cities.
